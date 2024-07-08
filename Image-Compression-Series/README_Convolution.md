@@ -36,3 +36,5 @@ The pixel values I get after applying the convolution opeartion are as follow:
 {30 37 45 85 119 152 151}}
 
 =================================================================================================================================================
+This is the compressed Image.
+![Compressed Image](https://github.com/SHIVAMAMBAH/CPP-Projects/assets/106507443/801f6d35-3daa-4b4a-8752-de6e20fdccfe)
