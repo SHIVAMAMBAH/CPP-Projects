@@ -4,9 +4,11 @@
 
 int main()
 {
-    char letters[27] = {'a','b','c','d','e','f','g','h','i','j','k','l',
-                        'm','n','o','p','q','r','s','t','u','v','w','x',
-                        'y','z'};
+    char consonants[22] = {'b','c','d','f','g','h','j','k','l',
+                        'm','n','p','q','r','s','t','v','w','x',
+                        'y','z','\0'};
+    
+    char vowels[6] = {'a','e','i','o','u','\0'};
                         
     int number;
     std::cout<<"Enter the number of words : ";
@@ -27,7 +29,11 @@ int main()
     
     while(number!=0){
         for(int i = 0;i<(rand()%(16)+5);i++){
-            std::cout<<letters[rand()%27];
+            if(rand()%2==0){
+                std::cout<<consonants[rand()%21];
+            }else{
+                std::cout<<vowels[rand()%5];
+            }
         }
         std::cout<<" ";
         number--;
