@@ -63,10 +63,10 @@ void AddMenu(HWND hWnd)
     AppendMenu(FileSubMenu, MF_STRING, 0, TEXT("Save\tCtrl+S"));
     AppendMenu(FileSubMenu, MF_STRING, 0, TEXT("Save As\tCtrl+Shift+S"));
     AppendMenu(FileSubMenu, MF_SEPARATOR, 0, 0);
-    AppendMenu(FileSubMenu, MF_STRING, 0, "Page Setup...");
+    AppendMenu(FileSubMenu, MF_STRING, 0, TEXT("Page Setup..."));
     AppendMenu(FileSubMenu, MF_STRING, 0, TEXT("Print...\tCtrl+P"));
     AppendMenu(FileSubMenu, MF_SEPARATOR, 0, 0);
-    AppendMenu(FileSubMenu, MF_STRING, 0, "Exit");
+    AppendMenu(FileSubMenu, MF_STRING, 0, TEXT("Exit"));
 
     AppendMenu(hMenu, MF_POPUP, (UINT_PTR)EditSubMenu, "Edit");
     AppendMenu(EditSubMenu, MF_STRING, 1, TEXT("Undo\tCtrl+Z"));
@@ -86,24 +86,24 @@ void AddMenu(HWND hWnd)
     AppendMenu(EditSubMenu, MF_STRING, 0, TEXT("Select All\tCtrl+A"));
     AppendMenu(EditSubMenu, MF_STRING, 0, TEXT("Time/Date\tF5"));
 
-    AppendMenu(hMenu, MF_POPUP, (UINT_PTR)FormatSubMenu, "Format");
-    AppendMenu(FormatSubMenu, MF_STRING, 0, "Word Wrap");
-    AppendMenu(FormatSubMenu, MF_STRING, 0, "Font...");
+    AppendMenu(hMenu, MF_POPUP, (UINT_PTR)FormatSubMenu, TEXT("Format"));
+    AppendMenu(FormatSubMenu, MF_STRING, 0, TEXT("Word Wrap"));
+    AppendMenu(FormatSubMenu, MF_STRING, 0, TEXT("Font..."));
 
-    AppendMenu(hMenu, MF_POPUP, (UINT_PTR)ViewSubMenu, "View");
+    AppendMenu(hMenu, MF_POPUP, (UINT_PTR)ViewSubMenu, TEXT("View"));
     
-    AppendMenu(ViewSubMenu, MF_POPUP, (UINT_PTR)ZoomSubMenu, "Zoom");
+    AppendMenu(ViewSubMenu, MF_POPUP, (UINT_PTR)ZoomSubMenu, TEXT("Zoom"));
     AppendMenu(ZoomSubMenu, MF_STRING, 0, TEXT("Zoom In\tCtrl+Plus"));
     AppendMenu(ZoomSubMenu, MF_STRING, 0, TEXT("Zoom Out\tCtrl + Minus"));
     AppendMenu(ZoomSubMenu, MF_STRING, 0, TEXT("Restore Default Zoom\tCtrl + 0"));
     
-    AppendMenu(ViewSubMenu, MF_STRING, 0, "Status Bar");
+    AppendMenu(ViewSubMenu, MF_STRING, 0, TEXT("Status Bar"));
 
     AppendMenu(hMenu, MF_POPUP, (UINT_PTR)HelpSubMenu, "Help");
-    AppendMenu(HelpSubMenu, MF_STRING, 0, "View Help");
-    AppendMenu(HelpSubMenu, MF_STRING, 0, "Send Feedback");
+    AppendMenu(HelpSubMenu, MF_STRING, 0, TEXT("View Help"));
+    AppendMenu(HelpSubMenu, MF_STRING, 0, TEXT("Send Feedback"));
     AppendMenu(HelpSubMenu, MF_SEPARATOR, 0, 0);
-    AppendMenu(HelpSubMenu, MF_STRING, 0, "About Notepad");
+    AppendMenu(HelpSubMenu, MF_STRING, 0, TEXT("About Notepad"));
 
     SetMenu(hWnd, hMenu);
 }
