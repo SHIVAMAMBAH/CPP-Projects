@@ -54,6 +54,7 @@ void AddMenu(HWND hWnd)
     HMENU FormatSubMenu = CreateMenu();
     HMENU EditSubMenu = CreateMenu();
     HMENU FileSubMenu = CreateMenu();
+    HMENU ZoomSubMenu = CreateMenu();
 
     AppendMenu(hMenu, MF_POPUP, (UINT_PTR)FileSubMenu, "File");
     AppendMenu(FileSubMenu, MF_STRING, 0, TEXT("New\tCtrl+N"));
@@ -90,7 +91,12 @@ void AddMenu(HWND hWnd)
     AppendMenu(FormatSubMenu, MF_STRING, 0, "Font...");
 
     AppendMenu(hMenu, MF_POPUP, (UINT_PTR)ViewSubMenu, "View");
-    AppendMenu(ViewSubMenu, MF_STRING, 0, "Zoom");
+    
+    AppendMenu(ViewSubMenu, MF_POPUP, (UINT_PTR)ZoomSubMenu, "Zoom");
+    AppendMenu(ZoomSubMenu, MF_STRING, 0, TEXT("Zoom In\tCtrl+Plus"));
+    AppendMenu(ZoomSubMenu, MF_STRING, 0, TEXT("Zoom Out\tCtrl + Minus"));
+    AppendMenu(ZoomSubMenu, MF_STRING, 0, TEXT("Restore Default Zoom\tCtrl + 0"));
+    
     AppendMenu(ViewSubMenu, MF_STRING, 0, "Status Bar");
 
     AppendMenu(hMenu, MF_POPUP, (UINT_PTR)HelpSubMenu, "Help");
