@@ -114,3 +114,16 @@ void AddMenu(HWND hWnd)
 
     SetMenu(hWnd, hMenu);
 }
+
+LRESULT CALLBACK ChildWindowprocedure(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
+{
+    switch (uMsg)
+    {
+    case WM_CLOSE:
+        DestroyWindow(hWnd);
+        break;
+    default:
+        return DefWindowProcW(hWnd, uMsg, wParam, lParam);
+    }
+    return 0;
+}
