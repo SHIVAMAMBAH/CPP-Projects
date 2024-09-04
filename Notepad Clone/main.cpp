@@ -127,3 +127,15 @@ LRESULT CALLBACK ChildWindowprocedure(HWND hWnd, UINT uMsg, WPARAM wParam, LPARA
     }
     return 0;
 }
+
+void registerChildWindow(HINSTANCE hInstance)
+{
+    WNDCLASSW wcc = {0};
+
+    wcc.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
+    wcc.hCursor = LoadCursor(NULL, IDC_ARROW);
+    wcc.lpfnWndProc = ChildWindowprocedure;
+    wcc.hInstance = hInstance;
+    wcc.lpszClassName = L"MYCHILDWINDOWCLASS";
+    RegisterClassW(&wcc);
+}
