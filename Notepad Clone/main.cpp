@@ -41,7 +41,7 @@ LRESULT CALLBACK Windowprocedure(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp)
         PostQuitMessage(0);
         break;
     default:
-        DefWindowProcW(hWnd, msg, wp, lp);
+        return DefWindowProcW(hWnd, msg, wp, lp);
         break;
     }
 }
