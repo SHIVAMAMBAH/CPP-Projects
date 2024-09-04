@@ -5,6 +5,9 @@ LRESULT CALLBACK ChildWindowprocedure(HWND, UINT, WPARAM, LPARAM);
 
 void AddMenu(HWND);
 
+void registerChildWindow(HINSTANCE);
+void displayChildWindow(HWND hWnd);
+
 int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevinst, LPSTR args, int nCmdShow)
 {
     WNDCLASSW wc = {0};
