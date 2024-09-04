@@ -1,6 +1,7 @@
 #include <windows.h>
 
 LRESULT CALLBACK Windowprocedure(HWND, UINT, WPARAM, LPARAM);
+LRESULT CALLBACK ChildWindowprocedure(HWND, UINT, WPARAM, LPARAM);
 
 void AddMenu(HWND);
 
