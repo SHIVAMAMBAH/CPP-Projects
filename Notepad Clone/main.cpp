@@ -23,6 +23,9 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevinst, LPSTR args, int nCmdSho
     {
         return -1;
     }
+
+    registerChildWindow(hInst);
+    
     HWND hWnd = CreateWindowW(L"MY WINDOW CLASS", L"Notepad", WS_OVERLAPPEDWINDOW | WS_VISIBLE, 0, 0, 500, 500, NULL, NULL, NULL, NULL);
 
     ShowWindow(hWnd, 3);
