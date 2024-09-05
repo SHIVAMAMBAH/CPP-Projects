@@ -8,6 +8,8 @@ void AddMenu(HWND);
 void registerChildWindow(HINSTANCE);
 void displayChildWindow(HWND hWnd);
 
+void displayText(HWND hWnd);
+
 int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevinst, LPSTR args, int nCmdShow)
 {
     WNDCLASSW wc = {0};
@@ -150,4 +152,10 @@ void displayChildWindow(HWND hWnd)
         TranslateMessage(&msg);
         DispatchMessage(&msg);
     }
+}
+
+void displayText(HWND hWnd)
+{
+
+    CreateWindowW(L"Static", L"About", WS_VISIBLE | WS_CHILD | SS_CENTER, 0, 0, 500, 500, hWnd, NULL, NULL, NULL);
 }
