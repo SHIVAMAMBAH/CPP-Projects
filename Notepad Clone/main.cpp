@@ -121,6 +121,9 @@ LRESULT CALLBACK ChildWindowprocedure(HWND hWnd, UINT uMsg, WPARAM wParam, LPARA
 {
     switch (uMsg)
     {
+    case WM_CREATE:
+        displayAboutText(hWnd);
+        break;    
     case WM_CLOSE:
         DestroyWindow(hWnd);
         break;
