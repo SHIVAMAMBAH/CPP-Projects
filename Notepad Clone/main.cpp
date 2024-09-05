@@ -143,7 +143,7 @@ void registerChildWindow(HINSTANCE hInstance)
 void displayChildWindow(HWND hWnd)
 {
 
-    CreateWindowW(L"MYCHILDWINDOWCLASS", L"CHILD WINDOW", WS_OVERLAPPEDWINDOW | WS_VISIBLE, 100, 100, 300, 200, hWnd, NULL, NULL, NULL);
+    CreateWindowW(L"MYCHILDWINDOWCLASS", L"CHILD WINDOW", WS_OVERLAPPED | WS_VISIBLE | WS_SYSMENU, 75, 100, 500, 500, hWnd, NULL, NULL, NULL);
     MSG msg = {0};
     while (GetMessage(&msg, NULL, 0, 0))
     {
