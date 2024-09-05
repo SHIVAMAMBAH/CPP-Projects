@@ -46,6 +46,13 @@ LRESULT CALLBACK Windowprocedure(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp)
     case WM_CREATE:
         AddMenu(hWnd);
         break;
+    case WM_COMMAND:
+        switch (wp)
+        {
+        case ID_ABOUT_NOTEPAD:
+            displayChildWindow(hWnd);
+            break;
+        }
     case WM_DESTROY:
         PostQuitMessage(0);
         break;
