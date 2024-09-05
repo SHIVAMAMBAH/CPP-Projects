@@ -156,6 +156,15 @@ void displayChildWindow(HWND hWnd)
 
 void displayText(HWND hWnd)
 {
-
+    CreateWindowW(L"Static", L"SPW OS\n"
+                             L"version 1.0.0\n\n"
+                             L"\u00A9 SPW Corporation. All Rights Reserved.\n"
+                             L"\n"
+                             L"The SPW OS ans its user Interface are protected by\n trademark and other pending or existing intellectual \nproperty in the India and other Countries/regions.\n\n"
+                             L"\n\n"
+                             L"This product is lincensed under the SPW Software\n License Terms to:\n\n"
+                             L"Admin\n",
+                  WS_VISIBLE | WS_CHILD | SS_LEFT, 100, 100, 500, 500, hWnd, NULL, NULL, NULL);
+    
     CreateWindowW(L"Static", L"About", WS_VISIBLE | WS_CHILD | SS_CENTER, 0, 0, 500, 500, hWnd, NULL, NULL, NULL);
 }
