@@ -166,5 +166,5 @@ void displayText(HWND hWnd)
                              L"Admin\n",
                   WS_VISIBLE | WS_CHILD | SS_LEFT, 100, 100, 500, 500, hWnd, NULL, NULL, NULL);
     
-    CreateWindowW(L"Static", L"About", WS_VISIBLE | WS_CHILD | SS_CENTER, 0, 0, 500, 500, hWnd, NULL, NULL, NULL);
+    CreateWindowW(L"Static", L"About", WS_VISIBLE | WS_CHILD | SS_CENTER, 20, 100, 450, 10, hWnd, NULL, NULL, NULL);
 }
