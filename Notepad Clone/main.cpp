@@ -1,5 +1,7 @@
 #include <windows.h>
 
+#define ID_ABOUT_NOTEPAD 1
+
 LRESULT CALLBACK Windowprocedure(HWND, UINT, WPARAM, LPARAM);
 LRESULT CALLBACK ChildWindowprocedure(HWND, UINT, WPARAM, LPARAM);
 
