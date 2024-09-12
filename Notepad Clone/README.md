@@ -13,4 +13,5 @@ It is mainly used to write System level Programming, Legacy Software Maintenance
 - In this folder we are going to make a NOTEPAD Clone from the very beginning.
 - We will be using the VS code for the development.
 - The WIN32 API is used for making the Clone and C++ language has been used.
+- You can study about the [WIN32 API](https://learn.microsoft.com/en-us/windows/win32/api/) from the official documentation.
 
