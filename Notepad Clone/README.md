@@ -32,9 +32,9 @@ It is mainly used to write System level Programming, Legacy Software Maintenance
   - **HINSTANCE hPrevinst** : This parameter was used in 16-bit windows to differentiate between instances of the same application. In modern 32-bit and 64-bit windows, this parameter is always NULL, as each application runs in its own address space, so its no longer needed.
   - **LPSTR args**: This is a pointer to a null terminated string that contains the command-line arguments passed to the application excluding the program name.
   - **int nCmdShow**: This parameter specifies how the window should be shown initially. It can take values like:
-                     - **SW_SHOWNORMAL**: Shows the normal window
-                     - **SW_SHOWMINIMIZED**: Shows the window minimized
-                     - **SW_SHOWMAXIMIZED** : Shows the window maximized
+    - **SW_SHOWNORMAL**: Shows the normal window
+    - **SW_SHOWMINIMIZED**: Shows the window minimized
+    - **SW_SHOWMAXIMIZED** : Shows the window maximized
 ## Usage/Examples
 ```C++
 int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevinst, LPSTR args, int nCmdShow)
