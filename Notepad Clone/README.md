@@ -15,3 +15,10 @@ It is mainly used to write System level Programming, Legacy Software Maintenance
 - The WIN32 API is used for making the Clone and C++ language has been used.
 - You can study about the [WIN32 API](https://learn.microsoft.com/en-us/windows/win32/api/) from the official documentation.
 
+##  
+- There is no need to install the any library from the outside, you just need a text editor and c++ compiler to start.
+- You can start by including the "windows.h" header file in the code.
+## Usage/Examples
+```C++
+#include<windows.h>
+```
