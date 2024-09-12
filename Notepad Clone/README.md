@@ -26,5 +26,5 @@ It is mainly used to write System level Programming, Legacy Software Maintenance
 - The entry point is the **WinMain** function.
 ## Usage/Examples
 ```C++
-#include<windows.h>
+int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevinst, LPSTR args, int nCmdShow)
 ```
