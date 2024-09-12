@@ -24,6 +24,9 @@ It is mainly used to write System level Programming, Legacy Software Maintenance
 ```
 - WIN32 API is used for making Graphical Windows based application. Since it is a Windows application.
 - The entry point is the **WinMain** function.
+- **int** is the return type of the **WinMain** function.
+- **WINAPI** is a MACRO that defines the calling convention for the function.
+- **Calling Function** specifies how the function should be called at the assembly level including how parameters are passed and how the stack is cleaned up. WINAPI is defined as _stdcall which is the standard calling convention used by the WINDOW API.
 ## Usage/Examples
 ```C++
 int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevinst, LPSTR args, int nCmdShow)
