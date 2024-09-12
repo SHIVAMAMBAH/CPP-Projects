@@ -22,3 +22,9 @@ It is mainly used to write System level Programming, Legacy Software Maintenance
 ```C++
 #include<windows.h>
 ```
+- WIN32 API is used for making Graphical Windows based application. Since it is a Windows application.
+- The entry point is the **WinMain** function.
+## Usage/Examples
+```C++
+#include<windows.h>
+```
