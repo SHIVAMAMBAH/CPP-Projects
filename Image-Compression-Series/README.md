@@ -1,5 +1,5 @@
-Image Compression
-Image compression is the process of reducing the size of an image file by eliminating redundant or unnecessary data, while preserving the essential information and visual quality of the image. It involves transforming the original image data into a more compact form, making it possible to store or transmit the image more efficiently. Image compression algorithms aim to minimize the number of bits required to represent the image, while maintaining an acceptable level of image quality.
+## Image Compression
+**Image compression** is the process of reducing the size of an image file by eliminating redundant or unnecessary data, while preserving the essential information and visual quality of the image. It involves transforming the original image data into a more compact form, making it possible to store or transmit the image more efficiently. Image compression algorithms aim to minimize the number of bits required to represent the image, while maintaining an acceptable level of image quality.
 
 Methods of Image Compression:
 Lossless Compression:
