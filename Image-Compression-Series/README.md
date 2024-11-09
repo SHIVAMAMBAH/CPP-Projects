@@ -14,7 +14,7 @@ Lossy compression methods discard some of the image data to reduce its size. The
 2. **Fractal Compression**: Fractal compression represents the image as a set of self-similar patterns, reducing the amount of data required to store the image.
 3. **Wavelet Compression**: Wavelet compression represents the image as a combination of low-frequency and high-frequency components, allowing for selective discarding of the high-frequency components.
 4. **Transform Coding**: Transform coding applies a mathematical transformation to the image data, such as the DCT, and then quantizes the transformed coefficients to reduce their precision.
-5. Predictive Coding: Predictive coding predicts the value of a pixel based on the values of neighboring pixels and encodes the difference between the predicted and actual values.
+5. **Predictive Coding**: Predictive coding predicts the value of a pixel based on the values of neighboring pixels and encodes the difference between the predicted and actual values.
 ### Hybrid Compression:
 Some image compression algorithms combine lossless and lossy techniques to achieve a balance between compression ratio and image quality. Examples include:
 1. JPEG (Joint Photographic Experts Group): JPEG uses a combination of DCT, quantization, and Huffman coding to achieve high compression ratios.
