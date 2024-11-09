@@ -17,6 +17,6 @@ Lossy compression methods discard some of the image data to reduce its size. The
 5. **Predictive Coding**: Predictive coding predicts the value of a pixel based on the values of neighboring pixels and encodes the difference between the predicted and actual values.
 ### Hybrid Compression:
 Some image compression algorithms combine lossless and lossy techniques to achieve a balance between compression ratio and image quality. Examples include:
-1. JPEG (Joint Photographic Experts Group): JPEG uses a combination of DCT, quantization, and Huffman coding to achieve high compression ratios.
+1. **JPEG (Joint Photographic Experts Group)**: JPEG uses a combination of DCT, quantization, and Huffman coding to achieve high compression ratios.
 2. WebP (Web Picture): WebP uses a combination of predictive coding, transform coding, and entropy coding to achieve efficient compression of images on the web.
 3. HEIC (High Efficiency Image Format): HEIC uses a combination of transform coding, predictive coding, and entropy coding to achieve high compression ratios and efficient compression of images.
