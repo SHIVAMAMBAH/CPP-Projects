@@ -1,1 +1,1 @@
-This folder contain animations made in cpp.
+This folder contains animations made in cpp.
