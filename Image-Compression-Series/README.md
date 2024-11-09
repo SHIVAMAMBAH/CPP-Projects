@@ -2,8 +2,8 @@
 **Image compression** is the process of reducing the size of an image file by eliminating redundant or unnecessary data, while preserving the essential information and visual quality of the image. It involves transforming the original image data into a more compact form, making it possible to store or transmit the image more efficiently. Image compression algorithms aim to minimize the number of bits required to represent the image, while maintaining an acceptable level of image quality.
 
 Methods of Image Compression:
-Lossless Compression:
-Lossless compression methods compress the image data without discarding any information. The compressed image can be restored to its original form without any loss of quality.
+### Lossless Compression:
+**Lossless compression** methods compress the image data without discarding any information. The compressed image can be restored to its original form without any loss of quality.
 1. Run-Length Encoding (RLE): RLE replaces sequences of identical pixels with a single value and a count of the number of times it appears in the sequence.
 2. Huffman Coding: Huffman coding assigns shorter codes to frequently occurring pixel values, reducing the overall size of the image data.
 3. Lempel-Ziv-Welch (LZW) Coding: LZW coding builds a dictionary of frequently occurring patterns in the image data and replaces them with a reference to the dictionary entry.
