@@ -7,7 +7,7 @@ Methods of Image Compression:
 1. **Run-Length Encoding (RLE)**: RLE replaces sequences of identical pixels with a single value and a count of the number of times it appears in the sequence.
 2. **Huffman Coding**: Huffman coding assigns shorter codes to frequently occurring pixel values, reducing the overall size of the image data.
 3. **Lempel-Ziv-Welch (LZW) Coding**: LZW coding builds a dictionary of frequently occurring patterns in the image data and replaces them with a reference to the dictionary entry.
-4. Arithmetic Coding: Arithmetic coding encodes the image data by calculating the probability of each pixel value and representing it as a fractional value.
+4. **Arithmetic Coding**: Arithmetic coding encodes the image data by calculating the probability of each pixel value and representing it as a fractional value.
 ### Lossy Compression:
 Lossy compression methods discard some of the image data to reduce its size. The compressed image may lose some of its original quality, but it can still be acceptable for certain applications.
 1. Discrete Cosine Transform (DCT): DCT is a widely used lossy compression method that separates the image into frequency components and discards the less important ones.
