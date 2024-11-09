@@ -10,7 +10,7 @@ Methods of Image Compression:
 4. **Arithmetic Coding**: Arithmetic coding encodes the image data by calculating the probability of each pixel value and representing it as a fractional value.
 ### Lossy Compression:
 Lossy compression methods discard some of the image data to reduce its size. The compressed image may lose some of its original quality, but it can still be acceptable for certain applications.
-1. Discrete Cosine Transform (DCT): DCT is a widely used lossy compression method that separates the image into frequency components and discards the less important ones.
+1. **Discrete Cosine Transform (DCT)**: DCT is a widely used lossy compression method that separates the image into frequency components and discards the less important ones.
 2. Fractal Compression: Fractal compression represents the image as a set of self-similar patterns, reducing the amount of data required to store the image.
 3. Wavelet Compression: Wavelet compression represents the image as a combination of low-frequency and high-frequency components, allowing for selective discarding of the high-frequency components.
 4. Transform Coding: Transform coding applies a mathematical transformation to the image data, such as the DCT, and then quantizes the transformed coefficients to reduce their precision.
